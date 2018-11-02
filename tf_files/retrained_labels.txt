@@ -1,5 +1,2 @@
-daisy
-dandelion
-roses
-sunflowers
-tulips
+cats
+dogs

@@ -1,5 +1,14 @@
 
-# train default
+# Pathology detection in chest X-ray
+## Usage
+```
+python3 -m scripts.label_image \
+    --graph=tf_files/retrained_graph.pb  \
+    --image=tbc1.jpg  
+```
+
+## Train default
+```
 python3 -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --how_many_training_steps=500 \
@@ -9,8 +18,10 @@ python3 -m scripts.retrain \
   --output_labels=tf_files/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
   --image_dir=CXR
+```
 
-# train advanced
+## Train advanced
+```
 python3 -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --learning_rate=0.001 \
@@ -21,9 +32,10 @@ python3 -m scripts.retrain \
   --output_labels=tf_files/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
   --image_dir=/CXR
+```
 
-# usabe
-python3 -m scripts.label_image \
-    --graph=tf_files/retrained_graph.pb  \
-    --image=tbc1.jpg  
+Library:
+https://github.com/googlecodelabs/tensorflow-for-poets-2
 
+Data set:
+https://ceb.nlm.nih.gov/repositories/tuberculosis-chest-x-ray-image-data-sets/

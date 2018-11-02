@@ -1,5 +1,5 @@
 
-# default
+# train default
 python3 -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --how_many_training_steps=500 \
@@ -8,9 +8,9 @@ python3 -m scripts.retrain \
   --output_graph=tf_files/retrained_graph.pb \
   --output_labels=tf_files/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
-  --image_dir=/home/a/Documents/me/cats_and_dogs/train
+  --image_dir=CXR
 
-# advanced
+# train advanced
 python3 -m scripts.retrain \
   --bottleneck_dir=tf_files/bottlenecks \
   --learning_rate=0.001 \
@@ -20,10 +20,10 @@ python3 -m scripts.retrain \
   --output_graph=tf_files/retrained_graph.pb \
   --output_labels=tf_files/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
-  --image_dir=/home/a/Documents/me/cats_and_dogs/train
+  --image_dir=/CXR
 
-
+# usabe
 python3 -m scripts.label_image \
     --graph=tf_files/retrained_graph.pb  \
-    --image=chou.jpg  
+    --image=tbc1.jpg  
 

@@ -1,10 +1,9 @@
 
 # Pathology detection in chest X-ray
-## Usage
+
+## Usage (cxrs in forlder radiographs)
 ```
-python3 -m scripts.label_image \
-    --graph=tf_files/retrained_graph.pb  \
-    --image=tbc1.jpg  
+python3 label_image.py 
 ```
 
 ## Train default

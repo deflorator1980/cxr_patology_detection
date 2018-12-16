@@ -1,8 +1,9 @@
 
 # Pathology detection in chest X-ray
-## Usage
+
+## Usage (Chest X-rays in forlder radiographs)
 ```
-python3 label_image.py
+python3 label_image.py 
 ```
 
 ## Train default

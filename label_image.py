@@ -11,7 +11,7 @@ import numpy as np
 import tensorflow as tf
 
 
-FOLDER='cxr/'
+FOLDER='radiographs/'
 
 def load_graph(model_file):
   graph = tf.Graph()

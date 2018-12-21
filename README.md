@@ -1,6 +1,6 @@
 
 # Pathology detection in chest X-ray
-
+## New version https://gitlab.com/deflorator1980/cxr_patology_detection.git
 ## Usage (Chest X-rays in forlder radiographs)
 ```
 python3 label_image.py 
